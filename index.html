@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Government Scheme Finder</title>
+  <meta name="description" content="A student project concept to help people discover government schemes that may fit their profile.">
+  <style>
+    :root { --navy:#12304a; --blue:#1769aa; --teal:#0d9488; --light:#f3f8fc; --ink:#203040; --muted:#5d7182; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--ink); line-height:1.6; background:#fff; }
+    header { background:linear-gradient(125deg,#12304a,#1769aa); color:#fff; padding:22px 7%; }
+    nav { display:flex; justify-content:space-between; align-items:center; gap:18px; flex-wrap:wrap; }
+    .brand { font-weight:800; font-size:1.1rem; letter-spacing:.2px; }
+    nav a { color:#fff; text-decoration:none; margin-left:16px; font-size:.95rem; }
+    .hero { padding:68px 7% 76px; background:linear-gradient(125deg,#12304a,#1769aa); color:#fff; }
+    .hero-inner { max-width:1050px; margin:auto; display:grid; grid-template-columns:1.35fr .8fr; gap:35px; align-items:center; }
+    .eyebrow { text-transform:uppercase; letter-spacing:2px; color:#aee9e0; font-size:.8rem; font-weight:bold; }
+    h1 { font-size:clamp(2.2rem,5vw,3.8rem); line-height:1.1; margin:14px 0 20px; }
+    .hero p { max-width:650px; font-size:1.1rem; color:#e8f2fa; }
+    .button { display:inline-block; background:#f7c948; color:#19354c; padding:12px 20px; border-radius:9px; font-weight:bold; text-decoration:none; margin-top:14px; }
+    .hero-card { background:#fff; color:var(--ink); border-radius:18px; padding:25px; box-shadow:0 15px 40px #061c3033; }
+    .hero-card h3 { margin-top:0; color:var(--navy); }
+    .pill { display:inline-block; background:#e5f6f3; color:#08796f; padding:6px 10px; border-radius:30px; font-size:.85rem; margin:4px 3px 0 0; }
+    section { padding:58px 7%; }
+    .wrap { max-width:1050px; margin:auto; }
+    h2 { color:var(--navy); font-size:clamp(1.7rem,3vw,2.3rem); margin:0 0 12px; }
+    .lead { color:var(--muted); max-width:760px; margin:0 0 28px; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .card { border:1px solid #dce8f0; border-radius:14px; padding:22px; background:#fff; }
+    .card .icon { font-size:1.8rem; }
+    .card h3 { margin:10px 0 8px; color:var(--navy); }
+    .soft { background:var(--light); }
+    .steps { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+    .step { background:#fff; border-radius:12px; padding:18px; border-top:4px solid var(--teal); }
+    .step b { color:var(--teal); font-size:1.1rem; }
+    .notice { border-left:4px solid #f7c948; background:#fff9e8; padding:16px 18px; border-radius:8px; color:#5b4a1b; }
+    .cta { text-align:center; background:#eaf5fb; }
+    footer { background:#10283d; color:#dce8f0; padding:25px 7%; text-align:center; font-size:.9rem; }
+    footer a { color:#aee9e0; }
+    @media(max-width:760px) { .hero-inner,.grid,.steps { grid-template-columns:1fr; } nav a { margin:0 10px 0 0; } .hero { padding-top:45px; } }
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="brand">🇮🇳 Scheme Finder</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#how">How it works</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">Student Innovation Project</div>
+        <h1>Find government schemes that may fit your needs.</h1>
+        <p>Our AI-Based Government Scheme Recommendation System is designed to make scheme information easier to discover by considering details such as age, income, occupation and eligibility requirements.</p>
+        <a class="button" href="#how">Explore how it works ↓</a>
+      </div>
+      <div class="hero-card">
+        <h3>Designed to make discovery simpler</h3>
+        <p>One place to begin exploring relevant scheme information.</p>
+        <span class="pill">Easy to understand</span>
+        <span class="pill">Eligibility-focused</span>
+        <span class="pill">Official links</span>
+        <p style="font-size:.88rem;color:#5d7182;margin-bottom:0">Project concept — recommendations are not live on this demonstration page.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About the Project</h2>
+      <p class="lead">Many people are unaware of the government schemes available to them. Information can be spread across different websites, and understanding eligibility conditions may take time. This project proposes a simpler way to discover potentially relevant schemes.</p>
+      <div class="grid">
+        <article class="card"><div class="icon">🔎</div><h3>The Problem</h3><p>People may find it difficult to identify schemes relevant to their circumstances and understand the requirements.</p></article>
+        <article class="card"><div class="icon">🤖</div><h3>Our Proposed Solution</h3><p>An AI-supported system that could compare user-provided details with scheme eligibility criteria and suggest relevant options.</p></article>
+        <article class="card"><div class="icon">🔗</div><h3>Reliable Next Steps</h3><p>Help users reach official government scheme pages to verify details and learn how to apply.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits" class="soft">
+    <div class="wrap">
+      <h2>Key Benefits</h2>
+      <p class="lead">The project aims to make public scheme information easier to navigate.</p>
+      <div class="grid">
+        <article class="card"><h3>Save time</h3><p>Reduce the effort involved in searching multiple sources.</p></article>
+        <article class="card"><h3>Clearer eligibility</h3><p>Present important eligibility conditions in simple language.</p></article>
+        <article class="card"><h3>Wider awareness</h3><p>Help people discover schemes they may not know about.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <h2>How it could work</h2>
+      <p class="lead">A proposed user journey for the future system.</p>
+      <div class="steps">
+        <div class="step"><b>01</b><h3>Enter details</h3><p>Provide relevant information such as age, location, income range or occupation.</p></div>
+        <div class="step"><b>02</b><h3>Check criteria</h3><p>The system compares details with available scheme requirements.</p></div>
+        <div class="step"><b>03</b><h3>Review matches</h3><p>See schemes that may be relevant and review their eligibility conditions.</p></div>
+        <div class="step"><b>04</b><h3>Verify officially</h3><p>Confirm current rules and apply only through official government channels.</p></div>
+      </div>
+      <div class="notice" style="margin-top:24px"><strong>Important:</strong> This page is an informational project concept, not an official government service. Eligibility and scheme rules can change. Always verify information on the relevant official government website. Do not share Aadhaar numbers, bank details or other sensitive personal information on this demo page.</div>
+    </div>
+  </section>
+
+  <section id="contact" class="cta">
+    <div class="wrap">
+      <h2>Building a simpler way to discover schemes</h2>
+      <p class="lead" style="margin-left:auto;margin-right:auto">We welcome feedback and suggestions that can help make this student project more useful and accessible.</p>
+      <p><strong>Project:</strong> AI-Based Government Scheme Recommendation System</p>
+      <p style="color:#5d7182;font-size:.9rem">Team contact details can be added here before publishing.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>AI Government Scheme Finder · Student Project Demonstration</p>
+  <p>Independent educational project; not affiliated with any government department.</p>
+</footer>
+</body>
+</html>
